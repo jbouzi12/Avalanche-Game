@@ -31,7 +31,6 @@ $(document).ready(function() {
 
   $('#start').click(function(event){
     event.preventDefault();
-    console.log(event);
     $link = $(event.target);
     $.ajax({
       url: $link.attr('href'),
@@ -39,6 +38,7 @@ $(document).ready(function() {
     })
     .done(function(gameBoardPartial){
       $('#directions').replaceWith(gameBoardPartial);
+        game = new Game();
     });
   });
 
@@ -79,5 +79,6 @@ $(document).ready(function() {
       $('#directions').show()
     });
   });
+
 
 });

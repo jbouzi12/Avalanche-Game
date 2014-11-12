@@ -11,14 +11,7 @@ p {display: inline;}
 #game-title {font-family:'Montserrat',sans-serif;display: block;text-align: center;font-size: 1.5em;}
 
 #login-form,#signup-form {display: none;font-size: .5em;}
-/*** Game and Directions ***/
-#gamefield {margin: 3em auto;width:700px;height:300px;border:1px solid black;}
-#directions{text-align: center}
-#directions h1{text-align: center}
-#directions ul{display: inline-table;}
-#directions li{margin-left: 0}
-#directions a {display: block; color:black;font-size: 1.5em}
-#directions a:hover {transition:all .2s ease-in; color:rgb(179, 245, 200);}
+
 
 
 
