@@ -1,0 +1,10 @@
+<% if session[:error] %>
+  <p><%= display_error %></p>
+<% end %>
+
+<% if current_user %>
+  <p>Hello! <%= current_user.username %></p>
+  <a href="/logout">Logout</a>
+<% else %>
+  <!-- <p>Welcome</p> -->
+<% end %>
