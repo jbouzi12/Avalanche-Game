@@ -14,7 +14,7 @@ post '/signup' do
   if request.xhr?
     erb :welcome, layout: false
   else
-    redirect '/'
+    redirect '/game'
   end
 end
 
@@ -37,7 +37,7 @@ post '/login' do
   if request.xhr?
     erb :welcome, layout: false
   else
-    redirect '/'
+    redirect '/game'
   end
 end
 

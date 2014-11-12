@@ -41,7 +41,10 @@ $(document).ready(function() {
     .done(function(welcomePartical) {
       $form.toggle(400);
       $('#signup').replaceWith(welcomePartical);
-      $('#login').hide()
+      $('#login, #home').hide();
+      $('#game-title').toggle();
+      $('#gamefield').show()
+
     })
     .fail(function(){
       console.log("Failed to login")
@@ -59,7 +62,9 @@ $(document).ready(function() {
     .done(function(welcomePartical) {
       $form.toggle(400);
       $('#signup').replaceWith(welcomePartical);
-      $('#login').hide()
+      $('#login, #home').hide();
+      $('#game-title').toggle();
+      $('#gamefield').show()
     });
   });
 
