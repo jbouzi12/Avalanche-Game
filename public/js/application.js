@@ -39,6 +39,12 @@ $(document).ready(function() {
     .done(function(gameBoardPartial){
       $('#directions').replaceWith(gameBoardPartial);
         game = new Game();
+        ['left', 'right'].forEach(function(direction){
+          Mousetrap.bind(direction, function() {
+            game.player.setDirection(direction)
+          });
+        });
+        setInterval(function() {game.loop(); }, 20);
     });
   });
 
@@ -79,6 +85,5 @@ $(document).ready(function() {
       $('#directions').show()
     });
   });
-
 
 });
