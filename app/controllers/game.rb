@@ -1,4 +1,9 @@
 get '/game' do
 
-  erb :game
+  if request.xhr?
+    erb :game, layout: false
+  else
+    erb :game
+  end
+
 end

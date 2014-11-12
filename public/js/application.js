@@ -13,7 +13,6 @@ $(document).ready(function() {
 
   $('#logout').click(function(event) {
     event.preventDefault();
-    console.log(event.target);
     $link = $(event.target);
     $.ajax({
       url: $link.attr('href'),
@@ -30,6 +29,19 @@ $(document).ready(function() {
     $(event.target).closest('form').toggle();
   });
 
+  $('#start').click(function(event){
+    event.preventDefault();
+    console.log(event);
+    $link = $(event.target);
+    $.ajax({
+      url: $link.attr('href'),
+      type: 'GET',
+    })
+    .done(function(gameBoardPartial){
+      $('#directions').replaceWith(gameBoardPartial);
+    });
+  });
+
   $('#login-form').submit(function(event) {
     event.preventDefault();
     $form = $(event.target);
@@ -43,7 +55,7 @@ $(document).ready(function() {
       $('#signup').replaceWith(welcomePartical);
       $('#login, #home').hide();
       $('#game-title').toggle();
-      $('#gamefield').show()
+      $('#directions').show()
 
     })
     .fail(function(){
@@ -64,7 +76,7 @@ $(document).ready(function() {
       $('#signup').replaceWith(welcomePartical);
       $('#login, #home').hide();
       $('#game-title').toggle();
-      $('#gamefield').show()
+      $('#directions').show()
     });
   });
 
