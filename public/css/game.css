@@ -1,4 +1,4 @@
-#gamefield {margin: 3em auto;width:700px;height:300px;border:1px solid black;background-image: url('../background.png')}
+#gamefield {margin: 3em auto;width:700px;height:300px;border:1px solid black;background-image: url('../imgs/background.png')}
 #directions{text-align: center}
 #directions h1{text-align: center}
 #directions ul{display: inline-table;}
@@ -12,4 +12,12 @@
   height:47px;
   width:53px;
   background-repeat: no-repeat;
+}
+
+.rock {
+  position: absolute;
+  background-image: url('../imgs/rock.png');
+  background-repeat: no-repeat;
+  height:19;
+  width: 17;
 }

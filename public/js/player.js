@@ -3,7 +3,7 @@ function Player(gameBoard) {
   this.x = 560;
   this.y = 426;
   this.dir = "awaiting doom";
-  this.speed = 5;
+  this.speed = 3;
   this.height = 17;
   this.width = 17;
   this.name = "player";
@@ -29,9 +29,10 @@ Player.prototype.move = function() {
       this.x -= this.speed;
       break;
   }
-  // if (! this.inBounds()) {
+  // if (! (this.x > 670 || this.x < 230)) {
   //   this.x = old_x;
   //   this.y = old_y;
+  //   this.outOfBounds = true;
   // }
   this.updateDisplay();
 };
@@ -40,10 +41,12 @@ Player.prototype.updateDisplay = function() {
   this.$sprite.css('left', this.x);
   this.$sprite.css('top', this.y);
 }
-// Player.prototype.inBounds = function() {
-//   return ()
-// }
 
 Player.prototype.setDirection = function(dir){
   this.dir = dir;
 }
+
+// Player.prototype.inBounds = function() {
+//   return (this.x > 670 || this.x < 230)
+// }
+
