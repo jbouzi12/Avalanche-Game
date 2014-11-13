@@ -29,11 +29,6 @@ Player.prototype.move = function() {
       this.x -= this.speed;
       break;
   }
-  // if (! (this.x > 670 || this.x < 230)) {
-  //   this.x = old_x;
-  //   this.y = old_y;
-  //   this.outOfBounds = true;
-  // }
   this.updateDisplay();
 };
 
@@ -50,7 +45,4 @@ Player.prototype.destroy = function() {
   this.$sprite.remove();
 }
 
-// Player.prototype.inBounds = function() {
-//   return (this.x > 670 || this.x < 230)
-// }
 

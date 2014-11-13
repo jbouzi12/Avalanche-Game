@@ -2,7 +2,7 @@ function Rock(gameBoard) {
   this.$field = gameBoard;
   this.x = Math.random() * (855 - 230) + 230;
   this.y = 160;
-  this.speed = 2;
+  this.speed = 6;
   this.height = 13;
   this.width = 13;
   this.name = "rock";
