@@ -3,7 +3,7 @@ function Game() {
   this.player = new Player(this.$field);
   this.rocks = [new Rock(this.$field), new Rock(this.$field), new Rock(this.$field)];
   this.startTime = new Date();
-  this.spawnInterval = 1500;
+  this.spawnInterval = 3000;
   this.nextSpawnTime = this.startTime.getTime() + this.spawnInterval;
 }
 

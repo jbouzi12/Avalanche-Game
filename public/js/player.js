@@ -46,6 +46,10 @@ Player.prototype.setDirection = function(dir){
   this.dir = dir;
 }
 
+Player.prototype.destroy = function() {
+  this.$sprite.remove();
+}
+
 // Player.prototype.inBounds = function() {
 //   return (this.x > 670 || this.x < 230)
 // }
