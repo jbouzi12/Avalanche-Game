@@ -17,9 +17,13 @@ Game.prototype.loop = function() {
   }
   rocksArray.forEach(function(rock) {
     rock.avalanche();
-    if (rock.y > 430) {
+      if (rock.y > 430) {
       rocksArray.shift();
       rock.destroy();
+    }
+    if (rock.collision(player)) {
+      player.dead = true;
+      player.destroy();
     }
   });
 }
