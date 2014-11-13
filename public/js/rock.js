@@ -1,7 +1,7 @@
 function Rock(gameBoard) {
   this.$field = gameBoard;
-  this.x = Math.random() * this.$field.width();
-  this.y = 186;
+  this.x = Math.random() * (855 - 230) + 230;
+  this.y = 160;
   this.speed = 2;
   this.height = 13;
   this.width = 13;
