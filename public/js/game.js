@@ -20,8 +20,8 @@ Game.prototype.loop = function() {
   this.rocks.forEach(function(rock) {
     rock.avalanche();
     if (rock.y > 430) {
+      // rocksArray.shift();
       rock.destroy();
-      rocksArray.shift();
     }
   });
 }

@@ -15,9 +15,10 @@
 }
 
 .rock {
+  padding-left: 3em;
   position: absolute;
   background-image: url('../imgs/rock.png');
   background-repeat: no-repeat;
-  height:19;
-  width: 17;
+  height:47px;
+  width: 53px;
 }
