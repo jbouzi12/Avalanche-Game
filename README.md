@@ -1,27 +1,18 @@
-### Purpose
+### Avalanche-Game
 
-Phase 3 Audition Project:
-
-1. Give U time to demonstrate your skills to yourself and the phase 3 instructors.
-2. Solidify your learning in a solo challenge.
-3. Give U the opportunity to exercise your creativity.
-
-### Parameters
-
-U have 12 hours, from 10 AM Wednesday to 10 PM Wednesday.
-
-Implement the following:
+Avalanche is a simple game of survival! Try to keep sonic from being crushed by the falling rocks for as long as possible.
+Your time will be recorded and each time you the game is over you can view your top scores. This is a an app used to practice implementing the following:
 
 1. ActiveRecord with Associations
 2. Authentication
 3. Restful routes
-4. jQuery
-5. AJAX
+4. JavaScript
+5. jQuery
+6. AJAX
 
-Stretch goals:
+###TODO:
 
-1. Error handling
-2. User permissions
-3. JavaScript MVC (if it makes sense for your app)
+1. Bug: fix parameters such that Sonic remains within the boundaries of the game-field
+2. Implement Timer
+3. Create Game-Over page displaying User's top scores
 
-Don’t worry about the line count thing I mentioned, we won’t bother about it until we figure out a good way to do it.
