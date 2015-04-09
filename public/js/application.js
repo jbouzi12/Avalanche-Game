@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  // TODO:
+  // Edit jquery to account for bootstrap modals
+  //  - remove click events for login/signup forms
+  //  - keep ajax calls(?)
+  //  - remove click event for cancel btn
   $('#signup').click(function(event) {
     event.preventDefault();
     $("#signup-form").toggle();
