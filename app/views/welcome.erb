@@ -4,7 +4,7 @@
 
 <% if current_user %>
   <p>Hello! <%= current_user.username %></p>
-  <a href="/logout">Logout</a>
+  <button type="button" href="/logout" class="btn btn-primary btn-large">Logout</button>
 <% else %>
   <!-- <p>Welcome</p> -->
 <% end %>
