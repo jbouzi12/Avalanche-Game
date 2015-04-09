@@ -14,3 +14,5 @@ div.title p {font-size: 2em;}*/
 #navbar li {padding-right:.5em;display: inline;font-size: 1.5em;color: white}
 #directions, #login-form, #signup-form{display: none;}
 #game-title {font-family:'Montserrat',sans-serif;display: block;text-align: center;font-size: 1.5em;}
+#orange {background-color: rgb(255, 168, 5);border-color: rgb(255, 168, 5);}
+#orange:hover {background-color: rgba(255, 168, 5, .5);border-color: rgba(255, 168, 5, 0)}
