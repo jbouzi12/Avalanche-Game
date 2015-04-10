@@ -1,20 +1,8 @@
 $(document).ready(function() {
   // TODO:
   // Edit jquery to account for bootstrap modals
-  //  - remove click events for login/signup forms
-  //  - keep ajax calls(?)
-  //  - remove click event for cancel btn
-  $('#signup').click(function(event) {
-    event.preventDefault();
-    $("#signup-form").toggle();
-    $("#login-form").hide();
-  });
+  //  - Something wrong with ajax with this jquery link
 
-  $('#login').click(function(event) {
-    event.preventDefault();
-    $("#login-form").toggle();
-    $("#signup-form").hide();
-  });
 
   $('#logout').click(function(event) {
     event.preventDefault();
@@ -27,11 +15,6 @@ $(document).ready(function() {
       $('header').replaceWith(welcomePartical);
     });
 
-  });
-
-  $('.cancel-btn').click(function(event) {
-    event.preventDefault();
-    $(event.target).closest('form').toggle();
   });
 
   $('#start').click(function(event){
