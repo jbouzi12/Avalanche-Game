@@ -55,9 +55,6 @@ $(document).ready(function() {
       data: $form.serialize(),
     })
     .done(function(welcomePartical) {
-      // $form.toggle(400);
-      // not sure what to do with the below code 
-      // $('#signup').replaceWith(welcomePartical);
       $('#login, #signup').modal('hide');
       $('#game-title').toggle();
       $('#directions').show()
@@ -77,10 +74,6 @@ $(document).ready(function() {
       data: $form.serialize(),
     })
     .done(function(welcomePartical) {
-      // $form.toggle(400);
-
-      // not sure what to do with the below code 
-      // $('#signup').replaceWith(welcomePartical);
       $('#login, #signup').modal('hide');
       $('#game-title').toggle();
       $('#directions').show()
