@@ -26,7 +26,10 @@ $(document).ready(function() {
     })
     .done(function(gameBoardPartial){
       $('#directions').replaceWith(gameBoardPartial);
-        game = new Game();
+        var arena = $('#gamefield');
+        var player = new Player(arena);
+        var game = new Avalanche(arena, player);
+
         ['left', 'right'].forEach(function(direction){
           Mousetrap.bind(direction, function() {
             game.player.setDirection(direction)

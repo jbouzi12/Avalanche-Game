@@ -1,15 +1,15 @@
 var Avalanche = Avalanche || {};
 
-Avalanche.Game = function() {
-  this.$field = $('#gamefield');
-  this.player = new Player(this.$field);
+Avalanche.Game = function(field, newPlayer) {
+  this.$field = field;
+  this.player = newPlayer;
   this.rocks = [new Rock(this.$field), new Rock(this.$field)]
   this.startTime = new Date();
   this.spawnInterval = 250;
   this.nextSpawnTime = this.startTime.getTime() + this.spawnInterval;
 }
 
-Game.prototype.loop = function() {
+Avalanche.Game.prototype.loop = function() {
   this.player.move();
   player = this.player;
   rocksArray = this.rocks;
