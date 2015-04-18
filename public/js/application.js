@@ -36,7 +36,7 @@ $(document).ready(function() {
         var game = new Avalanche(arena, player);
 
         // Create Left/Right controls for user 
-        
+
         ['left', 'right'].forEach(function(direction){
           Mousetrap.bind(direction, function() {
             game.player.setDirection(direction)
@@ -55,9 +55,10 @@ $(document).ready(function() {
       data: $form.serialize(),
     })
     .done(function(welcomePartical) {
-      $form.toggle(400);
-      $('#signup').replaceWith(welcomePartical);
-      $('#login, #home').hide();
+      // $form.toggle(400);
+      // not sure what to do with the below code 
+      // $('#signup').replaceWith(welcomePartical);
+      $('#login, #signup').hide();
       $('#game-title').toggle();
       $('#directions').show()
 
@@ -76,9 +77,11 @@ $(document).ready(function() {
       data: $form.serialize(),
     })
     .done(function(welcomePartical) {
-      $form.toggle(400);
-      $('#signup').replaceWith(welcomePartical);
-      $('#login, #home').hide();
+      // $form.toggle(400);
+
+      // not sure what to do with the below code 
+      // $('#signup').replaceWith(welcomePartical);
+      $('#login, #signup').hide();
       $('#game-title').toggle();
       $('#directions').show()
     });
