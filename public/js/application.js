@@ -26,10 +26,17 @@ $(document).ready(function() {
     })
     .done(function(gameBoardPartial){
       $('#directions').replaceWith(gameBoardPartial);
+
+      // Initialize the Game with a new player 
+
         var arena = $('#gamefield');
+
         var player = new Player(arena);
+        
         var game = new Avalanche(arena, player);
 
+        // Create Left/Right controls for user 
+        
         ['left', 'right'].forEach(function(direction){
           Mousetrap.bind(direction, function() {
             game.player.setDirection(direction)
