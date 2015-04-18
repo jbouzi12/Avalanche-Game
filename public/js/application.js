@@ -81,7 +81,7 @@ $(document).ready(function() {
 
       // not sure what to do with the below code 
       // $('#signup').replaceWith(welcomePartical);
-      $('#login, #signup').hide();
+      $('#login, #signup').modal('hide');
       $('#game-title').toggle();
       $('#directions').show()
     });
