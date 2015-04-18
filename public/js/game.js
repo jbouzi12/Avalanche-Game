@@ -1,4 +1,6 @@
-function Game() {
+var Avalanche = Avalanche || {};
+
+Avalanche.Game = function() {
   this.$field = $('#gamefield');
   this.player = new Player(this.$field);
   this.rocks = [new Rock(this.$field), new Rock(this.$field)]
