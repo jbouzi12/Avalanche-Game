@@ -1,10 +1,15 @@
 $(document).ready(function() {
   // TODO:
-  // Edit jquery to account for bootstrap modals
-  // - Edit welcome partial
-  //    - Put Directions in Welcome Partial
   // - When submitting Start, remove directions but
   //    keep welcome message to user
+  // - fix AJAX response when starting game
+    // - remove everything except game title in directions div 
+  // - Undo changes to game initialization
+    // - just look at master branch
+  // - style start button
+  // - find out to remove shake animation from sonic and rocks
+    // - probably should make arena bigger
+
 
 
   $('#logout').click(function(event) {
