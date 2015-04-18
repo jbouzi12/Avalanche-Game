@@ -11,8 +11,8 @@ Avalanche.Game = function(field, newPlayer) {
 
 Avalanche.Game.prototype.loop = function() {
   this.player.move();
-  player = this.player;
-  rocksArray = this.rocks;
+  var player = this.player;
+  var rocksArray = this.rocks;
   if (Date.now() > this.nextSpawnTime) {
     this.rocks.push(new Rock(this.$field));
     this.nextSpawnTime += this.spawnInterval;
