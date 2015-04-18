@@ -1,8 +1,3 @@
-get '/signup' do
-
-  erb :"auth/signup"
-end
-
 post '/signup' do
   new_user = User.new(params[:new_user])
   if new_user.save
@@ -16,11 +11,6 @@ post '/signup' do
   else
     redirect '/game'
   end
-end
-
-get '/login' do
-
-  erb :"auth/login"
 end
 
 post '/login' do
