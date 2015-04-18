@@ -92,7 +92,7 @@ $(document).ready(function() {
       
       $('#login, #signup').modal('hide');
       
-      $('#game-title').toggle();
+      $('.title').toggle();
       
       $('#directions').show()
 
@@ -127,7 +127,7 @@ $(document).ready(function() {
 
       $('#login, #signup').modal('hide');
     
-      $('#game-title').toggle();
+      $('.title').toggle();
     
       $('#directions').show()
     
