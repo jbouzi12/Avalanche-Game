@@ -18,7 +18,7 @@
 #directions h1, #directions h2 {margin-bottom: 20px}
 #directions ul{display: inline-flex;margin-bottom: 45px}
 #directions li{margin-left: 0;list-style: none}
-#directions .dir_num {background-color: green; width: 180px;height:45px;font-size: 2em;border-radius: 100%;background-color: rgb(11, 173, 111)}
+#directions .dir_num {background-color: green; width: 120px;height:45px;font-size: 2em;border-radius: 100%;background-color: rgb(11, 173, 111)}
 #directions a {display: block; color:white;font-size: 1.5em}
 
 .player {
