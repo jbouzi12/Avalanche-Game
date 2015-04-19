@@ -15,11 +15,11 @@
 #gamefield {margin: 3em auto;width:700px;height:300px;border:1px solid black;background-image: url('../imgs/background.png');-webkit-animation:shake .2s ease infinite alternate;animation: shake .2s linear infinite alternate;}
 #directions{text-align: center}
 #directions h1{text-align: center}
+#directions h1, #directions h2 {margin-bottom: 20px}
 #directions ul{display: inline-flex;margin-bottom: 45px}
 #directions li{margin-left: 0;list-style: none}
-#directions .dir_num {background-color: green; width: 3.5em;font-size: 3em;border-radius: 100%;background-color: rgb(11, 173, 111)}
-#directions a {display: block; color:black;font-size: 1.5em}
-#directions a:hover {transition:all .2s ease-in; color:rgb(179, 245, 200);}
+#directions .dir_num {background-color: green; width: 180px;height:45px;font-size: 2em;border-radius: 100%;background-color: rgb(11, 173, 111)}
+#directions a {display: block; color:white;font-size: 1.5em}
 
 .player {
   position: absolute;
