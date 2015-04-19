@@ -20,3 +20,4 @@ section.title p {font-size: 2em;}
 /* Override Bootstrap button color */
 #orange {background-color: rgb(255, 168, 5);border-color: rgb(255, 168, 5);}
 #orange:hover {background-color: rgba(255, 168, 5, .5);border-color: rgba(255, 168, 5, 0)}
+#orange.start {width: 80px}
