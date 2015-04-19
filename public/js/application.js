@@ -4,6 +4,10 @@ $(document).ready(function() {
   //    keep welcome message to user
   // - fix AJAX response when starting game
     // - remove everything except game title in directions div 
+    // - THE ISSUE is that it removes the directions
+      // but the content in the layout will render on any page
+      // should move this to index page and move directions to its
+      // own page
   // - Undo changes to game initialization
     // - just look at master branch
   // - style start button
